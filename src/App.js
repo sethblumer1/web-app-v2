@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './HomeComps/Home';
 import UploadClass from './UploadComps/UploadClass';
+import Dashboard from './DashboardComps/Dashboard';
 import { extendTheme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom';
 
@@ -77,12 +78,13 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Routes basename="/web-app-v2/">
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route
           exact
           path="/web-app-v2/upload-info/"
           element={<UploadClass />}
         />
+        <Route exact path="/web-app-v2/dashboard/" element={<Dashboard />} />
         <Route exact path="/web-app-v2/" element={<Home />} />
       </Routes>
     </ChakraProvider>

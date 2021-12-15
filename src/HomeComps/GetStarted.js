@@ -95,7 +95,7 @@ export default function GetStarted() {
               <Stack spacing={10} pt={2}>
                 <Link
                   _hover={{ textDecoration: 'none' }}
-                  href="/web-app-v2/upload-info/"
+                  href={process.env.PUBLIC_URL + '/upload-info/'}
                   display="flex"
                   justifyContent="center"
                 >

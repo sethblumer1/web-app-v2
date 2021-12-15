@@ -77,7 +77,7 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router basename={process.env.PUBLIC_URL + '/'}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path={'/'} element={<Home />} />
           <Route exact path={'/upload-info'} element={<UploadClass />} />

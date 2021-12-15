@@ -95,7 +95,7 @@ export default function GetStarted() {
               <Stack spacing={10} pt={2}>
                 <Link
                   _hover={{ textDecoration: 'none' }}
-                  href="/upload-info"
+                  href="/web-app-v2/upload-info"
                   display="flex"
                   justifyContent="center"
                 >

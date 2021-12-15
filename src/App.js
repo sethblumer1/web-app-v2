@@ -77,7 +77,11 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Routes basename={process.env.PUBLIC_URL}>
-        <Route exact path="/web-app-v2/upload-info" element={<UploadClass />} />
+        <Route
+          exact
+          path="/web-app-v2/upload-info/"
+          element={<UploadClass />}
+        />
         <Route exact path="/web-app-v2/" element={<Home />} />
       </Routes>
     </ChakraProvider>

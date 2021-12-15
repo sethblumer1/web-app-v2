@@ -82,7 +82,7 @@ function App() {
           <Route exact path={'/'} element={<Home />} />
           <Route
             exact
-            path={'https://sethblumer1.github.io/web-app-v2/upload-info'}
+            path={'/web-app-v2/upload-info'}
             element={<UploadClass />}
           />
           {/* <Route exact path="/dashboard" element={<Dashboard />} /> */}

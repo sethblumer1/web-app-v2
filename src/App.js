@@ -83,7 +83,6 @@ function App() {
           <Route exact path="/upload-info" element={<UploadClass />} />
           {/* <Route exact path="/dashboard" element={<Dashboard />} /> */}
         </Routes>
-        <Home />
       </Router>
     </ChakraProvider>
   );

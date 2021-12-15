@@ -79,11 +79,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Router basename={process.env.PUBLIC_URL + '/'}>
         <Routes>
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + '/upload-info'}
-            element={<Home />}
-          />
+          <Route exact path={process.env.PUBLIC_URL + '/'} element={<Home />} />
           <Route
             exact
             path={process.env.PUBLIC_URL + '/upload-info'}

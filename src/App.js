@@ -77,10 +77,14 @@ const theme = extendTheme({
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Router basename="/">
+      <Router basename="/web-app-v2">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/upload-info" element={<UploadClass />} />
+          <Route exact path="/web-app-v2" element={<Home />} />
+          <Route
+            exact
+            path="web-app-v2/upload-info"
+            element={<UploadClass />}
+          />
           {/* <Route exact path="/dashboard" element={<Dashboard />} /> */}
         </Routes>
       </Router>

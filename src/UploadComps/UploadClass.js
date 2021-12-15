@@ -170,7 +170,7 @@ export default function UploadClass() {
       <Flex>
         <Link
           _hover={{ textDecoration: 'none' }}
-          href="/"
+          href={process.env.PUBLIC_URL}
           display="flex"
           justifyContent="center"
           pr={4}
@@ -182,7 +182,7 @@ export default function UploadClass() {
         </Link>
         <Link
           _hover={{ textDecoration: 'none' }}
-          href="/dashboard"
+          href={process.env.PUBLIC_URL + '/dashboard/'}
           display="flex"
           justifyContent="center"
         >

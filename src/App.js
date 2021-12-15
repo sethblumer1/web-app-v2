@@ -81,11 +81,15 @@ function App() {
       <Routes basename={process.env.PUBLIC_URL}>
         <Route
           exact
-          path="/web-app-v2/upload-info/"
+          path={process.env.PUBLIC_URL + '/upload-info/'}
           element={<UploadClass />}
         />
-        <Route exact path="/web-app-v2/dashboard/" element={<Dashboard />} />
-        <Route exact path="/web-app-v2/" element={<Home />} />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + '/dashboard/'}
+          element={<Dashboard />}
+        />
+        <Route exact path={process.env.PUBLIC_URL} element={<Home />} />
       </Routes>
     </ChakraProvider>
   );

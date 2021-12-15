@@ -95,7 +95,7 @@ export default function GetStarted() {
               <Stack spacing={10} pt={2}>
                 <Link
                   _hover={{ textDecoration: 'none' }}
-                  href="/web-app-v2/dashboard/"
+                  href={process.env.PUBLIC_URL + '/upload-info/'}
                   display="flex"
                   justifyContent="center"
                 >
@@ -115,7 +115,10 @@ export default function GetStarted() {
               <Stack>
                 <Text align={'center'}>
                   Already a user?{' '}
-                  <Link color={'blue.400'} href="/web-app-v2/dashboard/">
+                  <Link
+                    color={'blue.400'}
+                    href={process.env.PUBLIC_URL + '/dashboard/'}
+                  >
                     Login
                   </Link>
                 </Text>

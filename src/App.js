@@ -82,7 +82,7 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL} element={<Home />} />
           <Route
             exact
-            path={'/web-app-v2/upload-info'}
+            path={process.env.PUBLIC_URL + '/upload-info'}
             element={<UploadClass />}
           />
           {/* <Route exact path="/dashboard" element={<Dashboard />} /> */}
